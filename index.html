@@ -45,7 +45,7 @@
       </div>
     </header>
     <section class="banner">
-      <div class="owl-carousel">
+      <div id="banner" class="owl-carousel">
           <div class="item" style="background-image: url(img/slide1.png);">
             <div class="wrapper">
               <span class="title">concrete masters inc.</span>
@@ -87,7 +87,7 @@
       </div>
     </section>
     <section class="about">
-      <div class="container">
+      <div class="wrapper">
         <div class="dFlex">
           <div class="info">
             <span class="heading">about us</span>
@@ -95,7 +95,7 @@
             <span class="text lined">Fully automated concrete batching plants</span>
             <span class="text lined">ISO certified in Quality Management, Environment Management and Health & Safety Management</span>
             <span class="text lined">90+ concrete mixer trucks ready to serve you</span>
-            <div class="linksk">
+            <div class="links">
               <a href="#">company profile</a>.
               <a href="#">our cultures</a>
             </div>
@@ -108,24 +108,75 @@
       </div>
     </section>
     <section class="services">
-      <div class="dflex">
-        <div class="serviceBox">
-          <span class="heading">
-            services
-          </span>
-          <span class="text">ready mix concrete</span>
-          <a href="#"><img src="#" alt=""><img src="img/phone.png" alt="">call us</a>
+      <div class="wrapper np">
+        <div id="services" class="owl-carousel">
+          <div class="serviceBox item" style="background-image: url(img/p1.png);">
+            <span class="heading">
+              services
+            </span>
+            <span class="text">ready mix concrete</span>
+            <a href="#" class="btnCall"><img src="img/phone.png" alt="" >call us</a>
+          </div>
+          <div class="serviceBox item" style="background-image: url(img/p2.png);">
+            <span class="heading">
+              services
+            </span>
+            <span class="text">ready mix concrete</span>
+            <a href="#" class="btnCall"><img src="img/phone.png" alt="">call us</a>
+          </div>
+        </div>
+        <div class="sectionHead">
+          <span class="heading">latest</span>
+          <h3>completed projects</h3>
         </div>
       </div>
     </section>
-    <section class="projects"></section>
-     
+    <section class="projects">
+      <div class="wrapper np">
+        <div id="projects" class="owl-carousel">
+          <div class="projectBox ">
+              <div class="boxHolder">
+                <img src="img/cp1.png" alt="">
+                <div class="infoBox">
+                  <div class="details">
+                    <span class="name">
+                      Bellagio Three
+                    </span>
+                    <span class="location">
+                      Megaworld Global City
+                    </span>
+                  </div>  
+                </div>
+              </div>
+          </div>
+          <div class="projectBox ">
+              <div class="boxHolder">
+                <img src="img/cp2.png" alt="">
+                <div class="infoBox">
+                  <div class="details">
+                    <span class="name">
+                      One Central Park Place
+                    </span>
+                    <span class="location">
+                      Eastwood City
+                    </span>
+                  </div>  
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="controls">
+          
+        </div>
+      </div>
+    </section>
+
+    
     </div> <!-- /wrapper -->        
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/main.js"></script>
-
     </body>
 </html>
