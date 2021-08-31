@@ -1,0 +1,224 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+header{
+   background: transparent;
+   position: fixed;
+   width: 100%;
+   left:0;
+   right: 0;
+   margin: auto;
+   z-index: 100;
+}
+.dFlex{
+   display: flex;
+}
+.wrapper{
+   max-width: 1440px;
+   padding: 0 30px;
+   margin: 0 auto;
+}
+header .wrapper{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.mainMenu{
+   flex: 1;
+}
+.mainMenu ul{
+   display: flex;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   justify-content: flex-end;
+}  
+.mainMenu ul li a{
+   display: block;
+   padding: 34px 22px;
+   text-decoration: none;
+   font-size: 16px;
+   color: #000000;
+   text-transform: uppercase;
+   position: relative;
+   text-align: center;
+}
+.mainMenu ul li a.active,.mainMenu ul li a:hover{
+   color: white;
+   transition:all .35s ease-in-out;
+}
+.mainMenu ul li a:before{
+   width: 100%;
+   height: 0;
+   position: absolute;
+   content: '';
+   background: #020183;
+   transition:all .35s ease-in-out;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   top: 0;
+   margin: auto;
+   z-index: -1;
+}
+.mainMenu ul li a.active:before,.mainMenu ul li a:hover:before{
+   height: 100%;
+   color: white;
+}
+.banner .item{
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   padding: 250px 0 195px;
+}
+
+.owl-carousel .item .title{
+   font-size: 22px;
+   position: relative;
+   text-align: center;
+   color: white;
+   display: block;
+   font-style: sans-serif;
+   text-transform:uppercase;
+   padding-bottom:20px;
+}
+.owl-carousel .item h1{
+   position: relative;
+   padding: 22px 0;
+}
+.owl-carousel .item h1:before{
+   position:absolute;
+   content: '';
+   width: 100%;
+   max-width: 150px;
+   height: 1px;
+   top: 0;
+   background:white;
+   left:0;
+   right:0;
+   margin:auto;
+}
+.owl-carousel .item h1:after{
+   position:absolute;
+   content: '';
+   width: 100%;
+   max-width: 150px;
+   height: 1px;
+   bottom: 0;
+   background:white;
+   left:0;
+   right:0;
+   margin:auto;
+}
+.owl-carousel .item .text{
+   font-size: 56px;
+   color: white;
+   font-weight: 600;
+   text-align: center;
+   display: block;
+   font-style: sans-serif;
+   text-transform:uppercase;
+   margin-bottom:10px;
+}
+.owl-carousel .item .text .withBg{
+   background:#12127d ;
+   padding: 0 5px;
+}
+.owl-carousel .item a{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 22px;
+   text-transform: uppercase;
+   font-weight: 600;
+   color:white;
+   margin-top:30px;
+   text-decoration: none;
+}
+.owl-carousel .item a img{
+   width: 44px;
+   height: 44px;
+   margin-right: 15px;
+}
+
+/* counter area */
+.counter{
+   position: relative;
+   top: -105px;
+   z-index: 99;
+}
+.counterBox{
+   width: 100%;
+   max-width:1176px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin:0 auto;
+}
+.counterBox .box{
+   padding: 50px;
+   background: #020183;
+   flex: 1;
+}
+.counterBox .box .count{
+   display: block;
+   color: white;
+   font-weight: 800;;
+   font-size: 80px;
+   text-align: center;
+}
+.counterBox .box .text{
+   display: block;
+   color: white;
+   font-weight: 800;;
+   text-align: center;
+   font-size: 24px;
+}
+
+.about .heading{
+   font-size:20px;
+   color: #a6967f;
+   font-weight: 500;
+   display: block;
+   position: relative;
+   padding-left: 60px;
+   text-transform: uppercase;
+}
+.about .heading:before{
+   position: absolute;
+   content: '';
+   width: 44px;
+   height: 3px;
+   background:#a6967f;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   margin:auto;
+}
+.about .info{
+   flex: 1;
+}
+.about .info h2{
+   font-size: 48px;
+   color: #020183;
+   margin: 34px 0 45px; 
+}
+.about .info .text{
+   display: block;
+   position: relative;
+   font-size: #000000;
+   font-size: 24px;
+   padding-bottom: 40px;
+   margin-bottom:40px;
+}
+.about .info .text:before{
+   position: absolute;
+   content: '';
+   width: 80px;
+   height: 3px;
+   background:#747c6c;
+   bottom: 0;
+   margin:auto;
+}
