@@ -20,6 +20,7 @@ header{
    max-width: 1440px;
    padding: 0 30px;
    margin: 0 auto;
+   position: relative;
 }
 header .wrapper{
    display: flex;
@@ -358,6 +359,9 @@ header .wrapper{
 .boxHolder{
    position: relative;
 }
+.projectBox  .boxHolder img{
+   max-height: 547px;
+}
 .projectBox .infoBox{
    position: absolute;
    width: 100%;
@@ -369,6 +373,7 @@ header .wrapper{
    padding: 40px;
    z-index: 11;
 }
+
 .projectBox .infoBox .details::before{
    position: absolute;
    content: '';
@@ -387,7 +392,7 @@ header .wrapper{
    color: white;
    display: block;
    font-size: 36px;
-   font-weight: 500;;
+   font-weight: 500;
 }
 .projectBox .infoBox .details .location{
    color: white;
@@ -395,6 +400,108 @@ header .wrapper{
    font-size: 24px;
    font-weight: 500;
 }
+
+.projects{
+   background: #ececec;
+   padding-bottom: 42px;
+}
+#projects{
+   padding-bottom: 30px;
+}
+.projects .controls{
+   justify-content: space-between;
+   position: absolute;
+   bottom: 30px;
+   width: 100%;
+
+}
+.projects .controls div{
+   cursor: pointer;
+   z-index: 200;
+}
+#projects .owl-dots .owl-dot span{
+   width:20px;
+   height:20px;
+   background: #a6967f; 
+   margin:20px 5px;
+   z-index: 200;
+   position: relative;
+}
+#projects .owl-dots .owl-dot.active span{
+   background: #020183;
+}
+.projects .slideHolder{
+   position: relative;
+
+}
+.projects .btnView{
+   display: block;
+   text-transform: uppercase;
+   text-align: center;
+   color: #a6967f;
+   font-size: 22px;
+   text-decoration: none;
+   line-height: 67px;
+   max-width: 322px;
+   margin: 0 auto;
+   border: 1px solid ;
+   position: relative; 
+   z-index: 2;
+}
+.projects .btnView:before{
+   position: absolute;
+   content: '';
+   width: 0;
+   height: 100%;
+   transition: all .35s ease-in-out;
+   z-index: -1;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin: auto;
+   top: 0;
+   background: white;;
+}
+.projects .btnView:hover:before{
+   width:100%;
+}
+
+
+
+/* team */
+.team{
+   background-image: url(../img/team.png);
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   padding: 150px 0 89px;
+}
+.team .holderBox{
+   padding: 17px;
+   /* max-width: 579px; */
+   background: #020183;
+   display: inline-block;
+}
+.joinBox{
+   padding: 66px 0 58px ;
+   border: 1px solid white;
+}
+.joinBox .header{
+   font-size:48px;
+   color: #ffffff;
+   text-transform: uppercase;
+   font-weight: 800;
+   text-align:center;
+   display: block;
+}
+
+
+
+
+
+
+
+
 
 .bgWhite{
    background: white;

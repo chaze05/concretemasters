@@ -10,11 +10,10 @@ $(function(){
             $("header").removeClass("bgWhite");
         }
     }); 
-    
+
     $('#projects').owlCarousel({
         loop:true,
-        dots:true,
-        nav:true,
+        nav:false,
         items:2,
         responsive:{
             0:{
@@ -28,6 +27,14 @@ $(function(){
             }
         }
     });
+        $('.btnNext').click(function() {
+            $('#projects').trigger('next.owl.carousel');
+        })
+        // Go to the previous item
+        $('.btnPrev').click(function() {
+            $('#projects').trigger('prev.owl.carousel');
+        })
+
 
     $('#services').owlCarousel({
         loop:true,
